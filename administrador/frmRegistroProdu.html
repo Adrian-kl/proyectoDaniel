@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ImpoRetros M&J - Registro de Productos</title>
+		<link href="css/estilo.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</head>
+<body>
+	<h1 align="center"> IMPORETROS M&J | Registro Productos <a href="inicio.php"><img src="images/logo_imporetros.png" width="40" height="40"></a></h1>
+	<br>
+              <div class="container">
+                <div class="row">
+                  <div class="card2 col-12">
+                
+                    <div class="form">
+                      <h3 style="text-align: center; color: #B50104;">Formulario de Registro de Empledados </h3>
+                      <br>
+                      <h3> Datos Personales del Empleado </h3>
+                      <form method="post" action="RegistroProdu.php" enctype="multipart/form-data">
+                      <p>
+                          <label>Id:</label>
+                          <input class="form-control" type="text" name="id" required>
+                        </p>
+                        <p>
+                          <label>Nombre:</label>
+                          <input class="form-control" type="text" name="nombre" required>
+                        </p>
+                        <p>
+                          <label>Descripcion:</label>
+                          <input class="form-control" type="text" name="descripcion" required>
+                        </p>
+                        <p>
+                          <label>Precio:</label>
+                          <input class="form-control" type="number" name="precio" required>
+                        </p>
+                        <p>
+                          <label>Cantidad:</label>
+                          <input class="form-control" type="text" name="cantidad" required>
+                        </p>
+                        <p>
+                          <label>Fecha:</label>
+                          <input class="form-control" type="date" name="fecha" required>
+                        </p>
+                        <p>
+                        <label>Foto:</label>
+                          <input class="form-control" type="file" name="fotos"  required>
+                        </p>
+                        <br><br><br><br>
+                        <button class="btn btn-warning" type="submit" value="Enviar">Agregar</button>
+                        <button class="btn btn-danger" type="reset" value="Restablecer">Resteblacer</button>            
+                      </form>
+                    </div>
+                  </div>   
+                </div>
+              </div>
+</body>
+</html>

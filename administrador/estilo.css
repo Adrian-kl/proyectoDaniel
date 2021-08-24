@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Aplicable a todos los elementos del Formulario */
+* {
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* CSS padding --> Genera espacios entre los elementos */
+body {
+  padding: 1rem;
+}
+
+h1, p {
+	color: black;
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Borde de los Elementos */
+input, textarea, button, select {
+  width: 100%;
+  border: 2px solid #0B0B61;
+	color: #B00B0E;
+}
+
+/* Borde de los Elementos con Focus */
+input:focus, textarea:focus, select:focus {
+  outline: 3px solid gold;
+}
+
+/* Tamaño y Ubicacion del Contenedor en el Formulario */
+.contenedor {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+@media (min-width: 600px) {
+  .contenedor {
+    padding: 0;
+  }
+}
+
+/* Envoltura del Contenedor y Estilo (Columnas, Color, Contorno) */
+.aspecto {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+.aspecto > * {
+  padding: 1em;
+}
+
+@media (min-width: 700px) {
+  .aspecto {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .aspecto > * {
+    padding: 2em 2em;
+  }
+
+}
+
+.barra {
+  background: #c3aa13;
+  color: #fff;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+form label {
+  display: block;
+}
+
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+}
+
+button {
+	background: #B50104;
+	width: 100%;
+	border: 0;
+	color: #FFFFFF;
+}
+button:hover, button:focus {
+  background: gold;
+  outline: 0;
+  color: #0B0B61;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+table, th, td {
+  border: 1px solid #993300;
+  border-collapse: collapse; 
+  padding: 5px;
+  text-align: center;
+  color:#0B0B61;
+} 
+
+
+.imgcliente {
+  padding: 3px;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+
+}
+
+
+.imgprodu {
+  padding: 3px;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+
+}
+
+
+.cuadro1 {
+  background:black;
+  opacity: 0.70;
+  border: 1px solid #ffdd17;
+  border-radius: 50px;
+  padding: 30px 4px 30px 4px;
+  margin: 50px 4px 4px 4px;
+  box-shadow: 5px 5px;
+
+}
+
+.cuadro1 p {
+  color: #ffdd17;
+}
+
+.cuadro1 h2 {
+  color: #ffdd17;
+}
+
+.cuadro1:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  background-color: #ffdd17;
+  color: whitesmoke;
+}
+
+.cuadro1:hover h2 {
+  color: black;
+}
+
+.cuadro1:hover p {
+  color: black;
+}
+
+.cuadro2 {
+  background:black;
+  opacity: 0.70;
+  border: 1px solid #ffdd17;
+  border-radius: 50px;
+  padding: 30px 4px 30px 4px;
+  margin: 50px 4px 4px 4px;
+  box-shadow: 3px 5px;
+  
+}
+
+.cuadro2 p {
+  color: #ffdd17;
+}
+
+.cuadro2 h2 {
+  color: #ffdd17;
+}
+
+.cuadro2:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  background-color: #ffdd17;
+  color: whitesmoke;
+}
+
+.cuadro2:hover h2 {
+  color: black;
+}
+
+.cuadro2:hover p {
+  color: black;
+}
+
+.containerproduc{
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+}
+
+.card{
+  justify-content: center;
+
+  position: absolute;
+  height: 400px;
+  filter: drop-shadow(0.5rem 0 0.5rem #3d3d3a);
+  margin: 3% 1%;
+}
+
+.card-img-top{
+
+  max-width: 100%;
+  height: auto;
+
+}
